@@ -1,0 +1,27 @@
+name: the_beloved_dead
+description: A text adventure game based on chapter one of The Beloved Dead Or The New, New New Colossus by Peter Bailey
+publish_to: 'none' # Remove this line if you intend to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  http: ^1.1.0 # For API calls
+  file_picker: ^6.0.0 # For .tada.json file selection
+  shared_preferences: ^2.2.0 # For storing API keys
+  dart_openai: ^5.1.0  # Check for the latest version
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/books/The Beloved Dead Chapter 0.tada.md
